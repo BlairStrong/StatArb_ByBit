@@ -1,0 +1,20 @@
+What to Include in your README
+1. Project's Title
+Statbot_Bybit statistical arbitrage identifer and executer
+
+
+2. Project Description
+
+This project determines a strategy of comparing all the cryptoassets on the bybit exchange IOT identify if there are any statistically cointegrated pairs. The specifics of this calculations are down to user preference and can be spanning minutes or weeks dependent on the risk appetite of the user. Assuming a cointegrated pair, upon their price action divergence, trades are placed such that as the prices covnerge both trading positions will be in profit.
+
+The execution layer of this script will automate the trade using the bybit API and utilizses the bybit testnet for validation.
+
+In order to evaluate the realtime opportunities, python libraries used include math, numpy, pandas and statsmodels.api are used. For live price data, the pybit module is used along with rest api data. 
+
+This development was based on the foundations of a course "statistical-arbitrage-bot-build-in-crypto-with-python-a-z". At the time of udnertaking, this course was out of date and so additionaal troubleshooting was required. Bybit updated the websocket api months after the course was published, so a major hurdle in getting this applicatoin to work was getting live price data from the bybit exchange. this hurdel was overcome using restAPI data called at max/2 request rate to avoid api bans.
+
+
+3. How to Install and Run the Project
+
+Although I have created a working trading bot further than the course was able to deliver, it is my opinion that the fundamental structure of this bot remains paid content and would direct this looking to utilise this application to the course "statistical-arbitrage-bot-build-in-crypto-with-python-a-z" on Udemy by Shaun Mcdonogh
+

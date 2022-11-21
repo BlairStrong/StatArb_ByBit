@@ -1,0 +1,4 @@
+pybit
+statsmodels
+matplotlib
+pandas
